@@ -39,8 +39,15 @@ body{
 
 .header{
   display: flex;
-  padding: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
   background-color: var(--deep-blue);
+}
+
+#facebook-link{
+  color: white;
+  font-size: 3rem;
 }
 
 .navbar{
@@ -69,6 +76,17 @@ body{
 
 .navbar-link:hover{
   color: var(--highlight);
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--deep-blue);
+  color: white;
 }
 
 /* Enable hover only on non-touch devices */
