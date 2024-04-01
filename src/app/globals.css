@@ -3,6 +3,7 @@
   --black:#000000;
   --jet: #353535;
   --white: #ffffff;
+  --highlight: rgb(204, 204, 40);
   --alert: #930000;
   --valid: #176617;
   /* Color Scheme */
@@ -19,10 +20,27 @@
   margin: 0;
 }
 
+html{
+  font-size: 18px;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+body{
+  height: 100dvh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  padding: 4rem;
+  background-color: var(--deep-blue);
 }
 
 .navbar{
@@ -30,31 +48,27 @@ body {
   flex-direction: row;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(var(--dark-blue), var(--medium-blue));
-  border-bottom: .5rem solid var(--black);
+  border-bottom: 4px solid var(--black);
+  border-top: 4px solid var(--black);
   align-items: center;
   justify-content: space-around;
-  padding: 2rem;
-  gap: 1rem;
+  background-color: var(--dark-blue);
+  gap: 2rem;
+  padding: .5rem;
 }
 
 .navbar-link{
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: inherit;
-  font-size: 3rem;
-  text-transform: uppercase;
   color: var(--white);
-  padding: 2rem;
-  border: thin solid black;
-  border-radius: 4rem;
-  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-link:hover{
-  color: var(--jet);
-  text-decoration: underline;
+  color: var(--highlight);
 }
 
 /* Enable hover only on non-touch devices */
@@ -78,18 +92,20 @@ body {
 /* Mobile */
 @media (max-width: 700px) {
   html {
-    font-size: 6px;
+    font-size: 10px;
   }
 
   .navbar{
     display : grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 3rem;
   }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   html {
-    font-size: 8px;
+    font-size: 14px;
   }
 }

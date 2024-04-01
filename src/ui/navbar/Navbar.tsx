@@ -8,18 +8,16 @@ export default function Navbar(){
             <Link className="navbar-link" href="/">
                 home
             </Link>
-            <Link className="navbar-link" href="/contact">
+            <Link className="navbar-link" href="/services">
                 services
             </Link>
             <Link className="navbar-link" href="/mission">
-                our mission
+                mission
             </Link>
             <Link className="navbar-link" href="/contact">
                 contact us
             </Link>
-            <Link className="navbar-link" href="/contact">
-                Second Time Around
-            </Link>
+
         </nav>
     ) 
 }
