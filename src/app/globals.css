@@ -89,6 +89,17 @@ body{
   color: white;
 }
 
+.footer-section-title{
+  text-decoration: underline;
+  text-underline-offset: .3rem;
+  margin-bottom: .3rem;
+}
+
+.footer section{
+  display: column;
+  text-align: center;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

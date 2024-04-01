@@ -14,9 +14,6 @@ export default function Navbar(){
             <Link className="navbar-link" href="/mission">
                 mission
             </Link>
-            <Link className="navbar-link" href="/contact">
-                contact us
-            </Link>
 
         </nav>
     ) 
