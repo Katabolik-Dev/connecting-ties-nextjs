@@ -1,0 +1,95 @@
+:root {
+  /* Utility Colors */
+  --black:#000000;
+  --jet: #353535;
+  --white: #ffffff;
+  --alert: #930000;
+  --valid: #176617;
+  /* Color Scheme */
+  --deep-blue: #12659D;
+  --dark-blue: #2873A6;
+  --medium-blue: #4694C0;
+  --light-blue: #62CEF5;
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(var(--dark-blue), var(--medium-blue));
+  border-bottom: .5rem solid var(--black);
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.navbar-link{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 2rem;
+  border: thin solid black;
+  border-radius: 4rem;
+  white-space: nowrap;
+}
+
+.navbar-link:hover{
+  color: var(--jet);
+  text-decoration: underline;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+
+  .navbar{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  html {
+    font-size: 8px;
+  }
+}
