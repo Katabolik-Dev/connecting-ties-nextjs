@@ -35,6 +35,7 @@ export default function News(){
 
     
     return (
+        <>
         <section className="news-section">
             <div className="news-card">
                 <article className="news-article">
@@ -53,5 +54,24 @@ export default function News(){
                 </article> 
             </div>
         </section>
+        <section className="news-section">
+            <div className="news-card">
+                <article className="news-article">
+                    <div className="card-item">
+                        <p className="card-text">
+                            {news.content}
+                        </p>
+                    </div>
+                    <div className="card-image">
+                       <img src={news.image_link}
+                        alt="image"
+                        className="responsive"
+                        loading="lazy"
+                         />
+                    </div>
+                </article> 
+            </div>
+        </section>
+        </>
     ) 
 }

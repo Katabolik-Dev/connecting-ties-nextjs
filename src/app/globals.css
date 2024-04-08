@@ -38,6 +38,13 @@ body{
   margin: 0;
 }
 
+.main {
+  background-color: var(--medium-blue);
+  height: auto;
+  width: 100%;
+}
+
+
 .header{
   display: flex;
   align-items: center;
@@ -89,7 +96,7 @@ body{
 .news-card{
   display: flex;
   flex-direction: row; 
-  width: 80%;
+  width: 90%;
   height: fit-content;
   background: var(--dark-blue);
   padding: 1rem;
@@ -112,7 +119,6 @@ body{
 
 .card-item{
   display: flex;
-  flex-grow: 1;
   width: 50%;
   justify-content: center;
   align-items: center;

@@ -7,7 +7,7 @@ import News from '@/ui/news/News'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className="main">
       <Header/>
       <Navbar/>
       <News />
