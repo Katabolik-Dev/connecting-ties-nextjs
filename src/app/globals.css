@@ -22,6 +22,7 @@
 
 html{
   font-size: 18px;
+  color: var(--white);
 }
 
 html,
@@ -76,6 +77,62 @@ body{
 
 .navbar-link:hover{
   color: var(--highlight);
+}
+
+.news-section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.news-card{
+  display: flex;
+  flex-direction: row; 
+  width: 80%;
+  height: fit-content;
+  background: var(--dark-blue);
+  padding: 1rem;
+}
+
+.news-article{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--jet);
+  padding: .5rem;
+  gap: 1rem;
+}
+
+.news-title{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-item{
+  display: flex;
+  flex-grow: 1;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.card-image{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+
+.responsive{
+  max-width: 100%;
+  height: auto;
 }
 
 .footer{
