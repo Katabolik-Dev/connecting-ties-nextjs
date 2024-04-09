@@ -4,11 +4,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 export default function Header(){
     return (
         <header className="header">
-            <Link href="donate">
-                <div id="donate-button">
-                DONATE
-                </div>
-            </Link>
+            <div className="header-image">
+                <div className="header-image-title">CONNECTING TIES</div>
+            </div>
         </header>
     )
 }
