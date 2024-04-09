@@ -53,16 +53,13 @@ body{
 }
 
 .header-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../../src/public/356918.jpg");
   background-size: cover;
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .header-image-title{
@@ -107,7 +104,7 @@ body{
   justify-content: center;
   text-decoration: none;
   color: var(--black);
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -175,24 +172,48 @@ body{
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-evenly;
   width: 100%;
   height: auto;
   padding: 1rem;
   background-color: var(--deep-blue);
   color: white;
+  font-size: 1.5vw;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .footer-section-title{
   text-decoration: underline;
   text-underline-offset: .3rem;
   margin-bottom: .3rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  font-size: 1.2vw;
 }
 
 .footer section{
   display: column;
   text-align: center;
 }
+
+#facebook-link{
+  font-size: 4vw;
+}
+
+.contact-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -217,11 +238,14 @@ body{
   html{
     font-size: 14px;
   }
+  .navbar-link{
+    font-size: 3vw;
+  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   html{
     font-size: 16px;
-  }
+  }  
 }
