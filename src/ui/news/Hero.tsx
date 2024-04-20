@@ -16,7 +16,7 @@ interface NewsItem {
 }
 
 
-export default function News(){
+export default function Hero(){
     const [news, setNews] = useState<NewsItem>({} as NewsItem);
     const domain = 'https://connecting-ties-api.vercel.app'
 
@@ -36,9 +36,7 @@ export default function News(){
     
     return (
         <>
-        <section className="news-section">
-            <div className="news-card">
-                <article className="news-article">
+        <section className="card-grid">             
                     <div className="card-image">
                        <img src={news.image_link}
                         alt="image"
@@ -46,31 +44,12 @@ export default function News(){
                         loading="lazy"
                          />
                     </div>
-                    <div className="card-item">
+                    <div className="card-content">
+                        <h1 className="card-header">About the Card Here</h1>
                         <p className="card-text">
                             {news.content}
                         </p>
                     </div>
-                </article> 
-            </div>
-        </section>
-        <section className="news-section">
-            <div className="news-card">
-                <article className="news-article">
-                    <div className="card-item">
-                        <p className="card-text">
-                            {news.content}
-                        </p>
-                    </div>
-                    <div className="card-image">
-                       <img src={news.image_link}
-                        alt="image"
-                        className="responsive"
-                        loading="lazy"
-                         />
-                    </div>
-                </article> 
-            </div>
         </section>
         </>
     ) 
