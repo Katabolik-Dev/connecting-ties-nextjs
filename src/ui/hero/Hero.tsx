@@ -51,8 +51,8 @@ export default function Hero(){
                 <div className={`card-content ${cormorant.variable}`}>
                     <h1 className={`${styles.header}`}>Our Vision</h1>
                     <p className="card-text">
-                    Working to help increase the community’s understanding of individuals with disabilities. Through our programs we strive to enhance the sense of dignity and independence that comes from being part of a community. Let’s all work together to make our  community a strong and inclusive environment for everyone.
-                    </p>
+                    Working to help increase the community&apos;s understanding of individuals with disabilities. Through our programs we strive to enhance the sense of dignity and independence that comes from being part of a community. Let&apos;s all work together to make our  community a strong and inclusive environment for everyone.
+                        </p>
                 </div>
             </div>  
 
