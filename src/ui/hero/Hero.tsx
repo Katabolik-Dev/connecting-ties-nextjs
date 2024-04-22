@@ -49,7 +49,7 @@ export default function Hero(){
                         />
                 </div>
                 <div className={`card-content ${cormorant.variable}`}>
-                    <h1 className={`${styles.header}`}>Our Vision</h1>
+                    <h1 className={`card-header ${styles.header}`}>Our Vision</h1>
                     <p className="card-text">
                     Working to help increase the community’s understanding of individuals with disabilities. Through our programs we strive to enhance the sense of dignity and independence that comes from being part of a community. Let’s all work together to make our  community a strong and inclusive environment for everyone.
                     </p>
@@ -81,7 +81,7 @@ export default function Hero(){
                         />
                 </div>
                 <div className={`card-content ${cormorant.variable}`}>
-                    <h1 className={`${styles.header}`}>Careers</h1>
+                    <h1 className={`card-header ${styles.header}`}>Careers</h1>
                     <p className="card-text">
                         Looking to make a positive impact in the Valdez or Copper River Basin areas? We are looking for compassionate and skilled workers to provide care and advocacy for those with disabilities.
                     </p>
