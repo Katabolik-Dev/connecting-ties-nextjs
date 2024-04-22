@@ -90,15 +90,14 @@ body{
   height: auto;
   align-items: center;
   justify-content: space-around;
-  background-image: linear-gradient(to left, var(--deep-blue),var(--light-blue),var(--deep-blue));
+  background-color: var(--medium-blue);
   gap: 2rem;
-  padding: 1rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-.navbar-link{
+.navbar-link-inactive{
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -106,11 +105,34 @@ body{
   font-size: 2vw;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.navbar-link:hover{
+.navbar-link-inactive:hover{
   color: var(--white);
-  scale: 1.15;
+  text-decoration: underline;
+}
+
+.navbar-link-active{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: var(--light-blue);
+  border: 4px solid var(--light-blue);
+  background-color: var(--dark-blue);
+}
+
+.active-link:hover{
+  text-decoration: none;
 }
 
 .card-grid{
@@ -120,15 +142,12 @@ body{
   width: 100%;
   height: auto;
   background-color: var(--light-blue);
-  gap: .2rem;
-  padding: .2rem;
 }
 
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 0 .2rem;
 }
 
 .card-content{
