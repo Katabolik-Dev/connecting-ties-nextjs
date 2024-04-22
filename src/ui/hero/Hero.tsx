@@ -70,7 +70,27 @@ export default function Hero(){
                         loading="lazy"
                         />
                 </div>
-            </div>        
+            </div> 
+
+            <div id="vision" className="card">
+            <div className="card-image">
+                    <img src="/island.jpg"
+                        alt="image"
+                        className="responsive"
+                        loading="lazy"
+                        />
+                </div>
+                <div className={`card-content ${cormorant.variable}`}>
+                    <h1 className={`${styles.header}`}>Careers</h1>
+                    <p className="card-text">
+                        Looking to make a positive impact in the Valdez or Copper River Basin areas? We are looking for compassionate and skilled workers to provide care and advocacy for those with disabilities.
+                    </p>
+                    <p className="card-text">
+                        For more information, please contact us at (907) 835-3274
+                    </p>
+                </div>
+            </div>  
+
         </section>
         </>
     ) 
