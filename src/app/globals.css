@@ -45,7 +45,7 @@ body{
 }
 
 
-.header{
+.banner{
   font-family: var(--font-ubuntu);
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ body{
   background-color: var(--deep-blue);
 }
 
-.header-image{
+.banner-image{
   background-image: url("/moose.jpg");
   background-size: cover;
   position: relative;
@@ -63,7 +63,7 @@ body{
   padding-bottom: 3rem;
 }
 
-.header-image-title{
+.banner-image-title{
   background-color: var(--white);
   color: var(--black);
   font-size: 6vw;
@@ -88,8 +88,6 @@ body{
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-bottom: 2px solid var(--white);
-  border-top: 2px solid var(--white);
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to left, var(--deep-blue),var(--light-blue),var(--deep-blue));
@@ -121,15 +119,16 @@ body{
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 1rem;
-  background-color: var(--black);
-  row-gap: 1.5rem;
+  background-color: var(--light-blue);
+  gap: .2rem;
+  padding: .2rem;
 }
 
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  gap: 0 .2rem;
 }
 
 .card-content{
@@ -158,9 +157,6 @@ body{
   height: auto;
 }
 
-.card-image img {
-  border-radius: 4px;
-}
 
 .responsive{
   max-width: 100%;
@@ -222,10 +218,8 @@ body{
 }
 
 .address{
-  text-align: justify;
-  line-height: normal;
   font-size: 2vw;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .address a{

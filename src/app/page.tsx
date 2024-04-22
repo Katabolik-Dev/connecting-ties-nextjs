@@ -1,14 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/ui/navbar/Navbar"
-import Header from '@/ui/header/Header'
+import Banner from '@/ui/banner/Banner'
 import Footer from '@/ui/footer/Footer'
 import Hero from '@/ui/hero/Hero'
 
 export default function Home() {
   return (
     <main className="main">
-      <Header/>
+      <Banner />
       <Navbar/>
       <Hero />
       <Footer/>

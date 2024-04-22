@@ -23,6 +23,7 @@ export default function Hero(){
     return (
         <>
         <section className="card-grid">
+
             <div id="mission" className="card">
                 <div className={`card-content ${cormorant.variable}`}>
                             <h1 className={`card-header ${styles.header}`}>Our Mission</h1>
@@ -41,7 +42,7 @@ export default function Hero(){
 
             <div id="vision" className="card">
             <div className="card-image">
-                    <img src="/glennallen.jpg"
+                    <img src="/solomon.jpg"
                         alt="image"
                         className="responsive"
                         loading="lazy"
@@ -53,7 +54,23 @@ export default function Hero(){
                     Working to help increase the community’s understanding of individuals with disabilities. Through our programs we strive to enhance the sense of dignity and independence that comes from being part of a community. Let’s all work together to make our  community a strong and inclusive environment for everyone.
                     </p>
                 </div>
-            </div>       
+            </div>  
+
+            <div id="mission" className="card">
+                <div className={`card-content ${cormorant.variable}`}>
+                            <h1 className={`card-header ${styles.header}`}>Second Time Around</h1>
+                            <p className="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repudiandae cum voluptates, laudantium cupiditate asperiores ducimus quae est inventore sit saepe eius delectus odio nesciunt explicabo enim maxime consectetur nisi? 
+                            </p>
+                </div>
+                <div className="card-image">
+                    <img src="/moose.jpg"
+                        alt="image"
+                        className="responsive"
+                        loading="lazy"
+                        />
+                </div>
+            </div>        
         </section>
         </>
     ) 
