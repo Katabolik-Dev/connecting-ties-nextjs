@@ -12,10 +12,44 @@ const cormorant = Cormorant({
 
 export default function Services() {
   return (
-    <section className={`${cormorant.variable} ${styles['services-grid']}`}>
-        <header className={`${styles['services-header']}`}>
-            Services
-        </header>
+    <section className="services-grid">
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      <div className="service-card">
+        <h1>Service</h1>
+         <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste saepe odio temporibus fugit laborum minus, minima quisquam, enim perferendis magnam ducimus sed? Quas ab, ducimus assumenda placeat quasi provident sunt!
+         </p>
+      </div>
+      
     </section>
   )
 }
