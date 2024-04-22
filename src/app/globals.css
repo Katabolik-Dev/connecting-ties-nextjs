@@ -185,6 +185,47 @@ body{
   height: auto;
 }
 
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: var(--dark-blue);
+}
+
+.services-header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+  grid-column: span 3;
+  padding-bottom: 1rem;
+}
+
+.services-header-content-text{
+  width: 60%;
+  text-align: center;
+  font-size: 2vw;
+  grid-column: span 3;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--deep-blue);
+  gap: 1rem;
+  border-radius: 2rem;
+}
+
+.service-header{
+  text-align: center;
+}
+
 .footer{
   display: flex;
   width: 100%;
@@ -272,6 +313,7 @@ body{
   letter-spacing: .3rem;
 }
 
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -325,6 +367,15 @@ body{
     flex-direction: column-reverse;
   }
 
+  .services-header-content-text{
+    font-size: 3vw;
+}
+
+.services-grid{
+    display: flex;
+    flex-direction: column;
+}
+
   #facebook-link:hover{
     border-radius: 1rem;
   }
@@ -349,4 +400,13 @@ body{
   #facebook-link:hover{
     border-radius: 1rem;
   }
+
+  .services-header-content-text{
+    font-size: 3vw;
+}
+
+.services-grid{
+    display: flex;
+    flex-direction: column;
+}
 }
