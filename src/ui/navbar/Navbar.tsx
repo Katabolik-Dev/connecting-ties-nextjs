@@ -12,7 +12,7 @@ export default function Navbar(){
     return (
         <>
         <nav className="navbar">
-            <Link className={`navbar-link ${pathname === '/' ? 'navbar-link-active' : 'navbar-link-inactive'} `} href="/">
+            <Link className={` ${pathname === '/' ? 'navbar-link-active' : 'navbar-link-inactive'} `} href="/">
                 Home
             </Link>
             <Link className={`${pathname === '/services' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/services">
