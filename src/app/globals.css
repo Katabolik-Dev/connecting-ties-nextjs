@@ -117,7 +117,7 @@ body{
 
 .card-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   width: 100%;
   height: auto;
@@ -126,6 +126,11 @@ body{
   row-gap: 1.5rem;
 }
 
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
 
 .card-content{
   display: flex;
@@ -150,7 +155,6 @@ body{
 .card-image{
   display: flex;
   justify-content: center;
-  width: 100%;
   height: auto;
 }
 
@@ -172,12 +176,13 @@ body{
 
 .footer-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 90%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: .5rem;
   background-color: var(--dark-blue);
   color: white;
   font-size: 1.5vw;
+  padding: 1rem;
 }
 
 .social-media{
@@ -192,7 +197,6 @@ body{
   text-decoration: underline;
   text-underline-offset: .3rem;
   text-transform: uppercase;
-  font-size: 3vw;
   padding: 1rem;
   padding-top: .125rem;
 }
@@ -201,19 +205,42 @@ body{
   width: 100%;
 }
 
+.social-media-links{
+  text-align: center;
+}
+
 #facebook-link{
-  font-size: 8vw;
+  font-size: 12vw;
 }
 
 .contact-us{
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+#contact-us-title{
+  grid-column: span 2;
+}
+
+.address{
+  text-align: justify;
+  line-height: normal;
+  font-size: 2vw;
+  padding: 1rem;
+}
+
+.address a{
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.address a:hover{
+  text-decoration: underline;
+}
+
+
 .disclaimer {
   display: flex;
-  grid-column: span 2;
+  grid-column: span 3;
   justify-content: center;
   align-items: center; /* Center vertically */
   font-size: 1vw;
@@ -253,9 +280,27 @@ body{
     font-size: 2.25vw;
   }
 
+  .card{
+    grid-template-columns: 1fr;
+  }
+
+  .card-text{
+    font-size: 3.5vw;
+  }
+
+  #vision{
+   display: flex;
+   flex-direction: column-reverse;
+  }
+
   .disclaimer{
     letter-spacing: .1rem;
     font-size: 1.4vw;
+  }
+
+  .address{
+    line-height: normal;
+    font-size: 2vw;
   }
 }
 
