@@ -95,6 +95,7 @@ body{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  box-shadow: 1px 1px 25px var(--black);
 }
 
 .navbar-link-inactive{
@@ -141,7 +142,7 @@ body{
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -152,6 +153,9 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 20px var(--black);
+  background-color: var(--black);
 }
 
 .card-content{
@@ -162,11 +166,11 @@ body{
   gap: 1rem;
   background-color: var(--deep-blue);
   padding: 2rem;
-  border-left: 10px solid var(--black);
 }
 
 .card-header{
   font-size: 3vw;
+  text-transform: uppercase;
 }
 
 .card-text{
@@ -265,24 +269,6 @@ body{
   padding: .5rem;
   color: var(--medium-blue);
   letter-spacing: .3rem;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
 }
 
 /* Mobile */
