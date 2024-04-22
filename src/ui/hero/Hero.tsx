@@ -62,6 +62,7 @@ export default function Hero(){
                             <p className="card-text">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repudiandae cum voluptates, laudantium cupiditate asperiores ducimus quae est inventore sit saepe eius delectus odio nesciunt explicabo enim maxime consectetur nisi? 
                             </p>
+                            
                 </div>
                 <div className="card-image">
                     <img src="/moose.jpg"
