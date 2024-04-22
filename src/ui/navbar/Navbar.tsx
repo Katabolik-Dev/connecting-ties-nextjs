@@ -1,27 +1,24 @@
 'use client'
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import { usePathname } from 'next/navigation'
-
-
-export default function Navbar(){
-
+export default function Navbar() {
     const pathname = usePathname();
 
+    const getLinkClass = (path) => (pathname === path ? 'navbar-link-active' : 'navbar-link-inactive');
+
     return (
-        <>
         <nav className="navbar">
-            <Link className={`${pathname === '/' ? 'navbar-link-active' : 'navbar-link-inactive'} `} href="/">
+            <Link className={getLinkClass('/')} href="/">
                 Home
             </Link>
-            <Link className={`navbar-link ${pathname === '/services' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/services">
+            <Link className={`navbar-link ${getLinkClass('/services')}`} href="/services">
                 Services
             </Link>
-            <Link className={`navbar-link ${pathname === '/donate' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/donate">
+            <Link className={`navbar-link ${getLinkClass('/donate')}`} href="/donate">
                 Donate
             </Link>
         </nav>
-        </>
-    ) 
+    );
 }
