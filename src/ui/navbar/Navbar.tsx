@@ -12,13 +12,13 @@ export default function Navbar(){
     return (
         <>
         <nav className="navbar">
-            <Link className={`${pathname === '/' ? 'navbar-link-active' : 'navbar-link-inactive'} `} href="/">
+            <Link className={` ${pathname === '/' ? 'navbar-link-active' : 'navbar-link-inactive'} `} href="/">
                 Home
             </Link>
-            <Link className={`navbar-link ${pathname === '/services' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/services">
+            <Link className={`${pathname === '/services' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/services">
                 Services
             </Link>
-            <Link className={`navbar-link ${pathname === '/donate' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/donate">
+            <Link className={`${pathname === '/donate' ? 'navbar-link-active' : 'navbar-link-inactive'}`} href="/donate">
                 Donate
             </Link>
         </nav>
