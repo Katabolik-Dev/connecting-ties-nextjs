@@ -4,50 +4,52 @@ import Link from 'next/link';
 import {useState, useEffect} from 'react';
 import axios from 'axios'; 
 import Image from 'next/image'
+import styles from './component.module.css'
+import { Cormorant } from 'next/font/google';
+
+const cormorant = Cormorant({
+    weight: '400',
+    subsets: ["latin"],
+    variable: '--font-cormorant'
+})
 
 
-interface NewsItem {
-    id: number;
-    title: string;
-    description: string;
-    content: string;
-    image_link: string;
-    image_description: string;
-}
 
 
 export default function Hero(){
-    const [news, setNews] = useState<NewsItem>({} as NewsItem);
+
     const domain = 'https://connecting-ties-api.vercel.app'
 
-    useEffect(()=>{
-        const fetchNews = async () => {
-            try {
-                const response = await axios.get<NewsItem[]>(`${domain}/news`);
-                setNews(response.data[0]);
-                console.log(response.data[0]);
-            } catch (error) {
-                console.error('Error Fetching News', error)
-            }
-        }
-        fetchNews();
-    },[])
 
-    
+
     return (
         <>
         <section className="card-grid">             
-                    <div className="card-image">
-                       <img src={news.image_link}
-                        alt="image"
-                        className="responsive"
-                        loading="lazy"
-                         />
-                    </div>
-                    <div className="card-content">
-                        <h1 className="card-header">About the Card Here</h1>
+
+                    <div className={`card-content ${cormorant.variable}`}>
+                        <h1 className={`card-header ${styles.header}`}>Our Mission</h1>
                         <p className="card-text">
-                            {news.content}
+                        Connecting Ties, Inc. is a non-profit corporation dedicated to ensuring that individuals with disabilities and their families have equal opportunity to be fully included in the community of their choice, where education, employment, housing, recreation, and family support services are available, and to be treated with the same respect and dignity afforded any member of the community. 
+                        </p>
+                    </div>
+                    <div className="card-image">
+                        <img src="/glennallen.jpg"
+                            alt="image"
+                            className="responsive"
+                            loading="lazy"
+                            />
+                    </div>
+                    <div className="card-image">
+                        <img src="/glennallen.jpg"
+                            alt="image"
+                            className="responsive"
+                            loading="lazy"
+                            />
+                    </div>
+                    <div className={`card-content ${cormorant.variable}`}>
+                        <h1 className={`${styles.header}`}>Our Vision</h1>
+                        <p className="card-text">
+                        Working to help increase the community’s understanding of individuals with disabilities. Through our programs we strive to enhance the sense of dignity and independence that comes from being part of a community. Let’s all work together to make our  community a strong and inclusive environment for everyone.
                         </p>
                     </div>
         </section>

@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Cormorant  } from "next/font/google";
 import "./globals.css";
 
 const ubuntu = Ubuntu({
   weight: '400',
- subsets: ["latin"]
+  subsets: ["latin"],
+  variable: '--font-ubuntu'
 });
+
+const cormorant = Cormorant({
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-cormorant'
+})
+
 
 export const metadata: Metadata = {
   title: "Connecting Ties",
@@ -19,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={`${ubuntu.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
