@@ -70,7 +70,30 @@ export default function Hero(){
                         loading="lazy"
                         />
                 </div>
-            </div>        
+            </div>
+
+            <div id="careers" className="card">
+            <div className="card-image">
+                    <img src="/island.jpg"
+                        alt="image"
+                        className="responsive"
+                        loading="lazy"
+                        />
+                </div>
+                <div className={`card-content ${cormorant.variable}`}>
+                    <h1 className={`${styles.header}`}>Careers</h1>
+                    <p className="card-text">
+                    Interested in making a positive impact in your local community?
+                    Consider a career with Connecting Ties.
+                    We're looking for caring and skilled individuals who can help
+                    those with disabilites in Valdez and the Copper River basin.
+                    </p>
+                    <p className="card-text">
+                        For more information please contact us at (907) 835-3274
+                    </p>
+                </div>
+            </div> 
+
         </section>
         </>
     ) 

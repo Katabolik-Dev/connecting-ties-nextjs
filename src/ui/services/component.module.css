@@ -7,24 +7,67 @@
     text-underline-offset: 8px;
 }
 
-@media (max-width: 700px) {
-    .header{
-        font-size: 7vw;
-        letter-spacing: .4rem;
-    }
-}
 
 .services-grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: auto;
     justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: var(--dark-blue);
 }
 
 .services-header{
-    font-family: var(--font-cormorant);
+    display: flex;
+    justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 4vw;
-    text-transform: uppercase;
+    font-size: 1.5vw;
+    grid-column: span 3;
+    padding-bottom: 1rem;
 }
+
+.services-header-content-text{
+    width: 60%;
+    text-align: center;
+    font-size: 2vw;
+    grid-column: span 3;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: var(--deep-blue);
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+.service-header{
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    .services-header-content-text{
+        font-size: 3vw;
+    }
+
+    .services-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .services-header-content-text{
+        font-size: 3vw;
+    }
+
+    .services-grid{
+        display: flex;
+        flex-direction: column;
+    }
+  }
