@@ -128,7 +128,7 @@ body{
   padding-left: 4rem;
   padding-right: 4rem;
   color: var(--light-blue);
-  border: 4px solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--dark-blue);
 }
 
