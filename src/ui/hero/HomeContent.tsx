@@ -16,7 +16,7 @@ const cormorant = Cormorant({
 
 
 
-export default function Hero(){
+export default function HomeContent(){
 
     const domain = 'https://connecting-ties-api.vercel.app'
 
