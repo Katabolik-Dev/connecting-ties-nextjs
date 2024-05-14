@@ -1,0 +1,85 @@
+.careersPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--deep-blue);
+    padding: 1.5rem;
+}
+
+.careersPageHeader{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: var(--font-merriweather-sans);
+    font-size: 5vw;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.careersGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.careersHeader{
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: var(--font-merriweather-sans);
+    justify-content: space-between;
+}
+
+.careersIntro{
+    display: flex;
+    font-size: 2vw;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.careersCard{
+    background-color: var(--dark-blue);
+    padding: 1rem;
+    border: thin solid var(--light-blue);
+}
+
+.careersHeaderSection{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.careerDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.careerSummary{
+   gap: 1rem;
+   font-size: 1.3vw;
+}
+
+.careerText{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.careerList{
+    padding-left: 1rem;
+}
+.positionTitle{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+
+.positionLocation{
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
